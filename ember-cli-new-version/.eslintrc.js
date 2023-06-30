@@ -5,12 +5,12 @@ module.exports = {
     server: true,
   },
   root: true,
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-    ecmaFeatures: {
-      legacyDecorators: true,
+    ecmaVersion: "latest",
+    sourceType: "module",
+    babelOptions: {
+      configFile: "./ember-cli-new-version/babel.config.json",
     },
   },
   plugins: ['ember'],
